@@ -347,6 +347,8 @@ MonoBehaviour:
   _amoPrefab: {fileID: 5542504103441905752, guid: 76713a2d806183043b4d1cd761c5b9ce, type: 3}
   _proppeler: {fileID: 692527643}
   _gm: {fileID: 786212038}
+  _audio: {fileID: 963194229}
+  _fireSound: {fileID: 8300000, guid: 9dc115d6e98ef254ca26257495186956, type: 3}
 --- !u!65 &63891985
 BoxCollider:
   m_ObjectHideFlags: 0

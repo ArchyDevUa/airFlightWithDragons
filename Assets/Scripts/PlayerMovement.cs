@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject _amoPrefab;
     [SerializeField] private GameObject _proppeler;
     [SerializeField] private GameManager _gm;
+    [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioClip _fireSound;
 
     private void Start()
     {
@@ -42,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 Instantiate(_amoPrefab,_proppeler.transform.position   ,transform.rotation * _amoPrefab.transform.rotation );
+                _audio.PlayOneShot(_fireSound);
+                Debug.Log(_proppeler.transform.position);
+                //Debug.Log(transform.rotation);
             
             }
         
